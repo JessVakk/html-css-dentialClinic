@@ -16,11 +16,22 @@ html, body {
   }
 /* TOP MENU  */
 
+.border {
+  border: solid 1px blue;
+}
+
 .top-nav {
   border-color: #707070;
   display: none;
  }
-span {
+
+ .top-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+ }
+
+.container span {
   padding-right: .5rem;
   color: var(--primary-color);
 }
@@ -28,19 +39,20 @@ span {
 .top-nav p{
   font-size: 16px;
   font-family: Roboto;
-  
 } 
+ .container .social-icons{
+    
+}
 /* MAIN-MENU */
-.navbar {
+.navbar .container {
   background-color: var(--pri-background-color);
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  margin: .5rem; 
+   
 }
-.logo img {
-height: 3rem;
-
+.navbar .container .logo {
+  height: 3rem;
 }  
 .collapse:not(.show) {
 display: none;
@@ -50,11 +62,12 @@ display: none;
   border: none;
   outline: none;
   font-size: 2rem;
+  margin-right: 2rem;
   color: var(--primary-color);
     
 }
 /* SHOWCASE */
-.showcase-container {
+.showcase .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,14 +76,14 @@ display: none;
   padding-bottom: 1rem;
   background-color: var(--shadowMan-color);
 }
-.showcase-container h1{
+.showcase .container h1{
   font-size: 22px;
   font-family: Roboto slab;
   font-weight: normal;
   margin-bottom: 1rem;
 }
 
-.showcase-container p{
+.showcase .container p{
   font-size: 16px;
   font-family: Roboto;
   font-weight: normal;
@@ -81,7 +94,7 @@ display: none;
   text-align: center;
 }
 
-.btn{
+.container .btn{
   width: 239px;
   height: 60px;
   font-size: 18px;
@@ -100,6 +113,8 @@ display: none;
 
 
 /* SERVICES */
+
+
 .mt {
   margin-top: 1rem;
 }
@@ -116,12 +131,10 @@ display: none;
 }
 .text{
   padding: 1rem;
-  }
-  
-
-.grid-card {
+}
+.container .grid-card {
   display: grid;
-  grid-template-columns: 50%, 50%, 
+  grid-template-columns: 1fr 1fr;
 }
 
 .text span hr{
@@ -132,7 +145,7 @@ display: none;
   height: 4px;
   margin-top: .5rem;
   margin-left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
 }
 
 .card-inner {
@@ -193,6 +206,8 @@ p {
   color: var(--pri-background-color);
 }
 
+/* FOOTER */
+
 .container .social-icons {
   display: flex;
   justify-content: space-evenly;
@@ -206,7 +221,7 @@ a:hover {
   color: var(--secondary-color);
 }
 
-/* FOOTER */
+/* MEDIA QUERIES */
 
 @media (min-width: 768px) {
   .navbar-toggler {
@@ -218,9 +233,7 @@ a:hover {
   .navbar-nav {
     flex-direction: row;
   }
-  a {
-    padding: 0 .5rem;
-  }
+  
   .top-nav {
     display: block;
   }
