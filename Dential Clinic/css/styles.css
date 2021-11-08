@@ -95,30 +95,36 @@ display: none;
 /* SHOWCASE */
 .showcase {
   background-color: var(--shadowMan-color);
-  padding-left: 1rem;
+  /* padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1rem; */
+ 
 }
 
 .showcase .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 1rem;
   
 }
 .showcase .container h1{
-  font-size: 22px;
+  font-size: 35px;
   font-family: Roboto slab;
   font-weight: normal;
-  margin-bottom: 1rem;
+  text-align: left;
 }
-
+.showcase .content{
+  padding-left: 3rem;
+}
 .showcase .container p{
   font-size: 16px;
   font-family: Roboto;
   font-weight: normal;
+  text-align: left;
 }
 .showcase .container img {
+  height: 30rem;
   display: none;
 }
 .content {
@@ -136,7 +142,8 @@ display: none;
   color: #fff;
   border: none;
   border-radius: 10px;
- }
+  margin-left: 1rem;
+   }
 
 
 
@@ -145,10 +152,10 @@ display: none;
 .about-us {
   background-color: var(--pri-background-color);
   display: none;
+  padding-top: 3rem;
 }
 
 .about-us .container img {
-  width: 100%;
   height: 723.79px;
   
 }
@@ -160,22 +167,21 @@ display: none;
   margin-bottom: 3rem;
   color: #f0cfb6;
 }
-.about-us .rubrik{
+.about-us h1{
   color: #363636;
   font-family: Roboto Slab;
-  font-size: 40px;
+  font-size: 30px;
+  text-align: left;
  }
 
 .about-us .text p {
   color: #363636;
   font-family: Roboto;
   font-size: 18px;
+  text-align: left;
 }
 
-.siffror{
-display: flex;
-flex-direction: column;
-}
+
 
 /* SERVICES */
 
@@ -202,6 +208,8 @@ flex-direction: column;
 .container .grid-card {
   background-color: var(--sec-background-color);
   display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
 
   
 }
@@ -218,8 +226,8 @@ flex-direction: column;
 }
 
 .circle {
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 1rem;
@@ -228,7 +236,7 @@ flex-direction: column;
   position: relative;
 }
 .image {
-  height: 60px;
+  height: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -304,6 +312,9 @@ a:hover {
   .container {
     max-width: 720px;
   }
+  .grid-card {
+    grid-template-columns: 1fr 1fr;
+  }
   #showcase-container img {
     display: inline-block;
   } 
@@ -329,15 +340,15 @@ a:hover {
     display: block;
   }
   .container .grid-card {
-    height: 1349;
-    width: 100%;
+    /* height: 1349;
+    width: 100%; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
   }
   .card {
-    height: 439px;
-    width: 450px;
+    /* height: 439px;
+    width: 450px; */
   }
 }
 @media (min-width: 1200px) {
