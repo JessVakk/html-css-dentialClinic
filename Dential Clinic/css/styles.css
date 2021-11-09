@@ -30,6 +30,23 @@ html, body {
   .p {
     /* padding: .5rem; */
   }
+
+  .btn {
+    padding: .75rem 2.5rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: transparent;
+    width: 100%;
+  }
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
 /* TOP MENU  */
 
 .border {
@@ -49,7 +66,7 @@ html, body {
   background-color: var(--pri-background-color);
  }
 
-.container span {
+.top-nav .container span {
   padding-right: .5rem;
   color: var(--primary-color);
 }
@@ -87,71 +104,40 @@ display: none;
   margin-right: 2rem;
   color: var(--primary-color);
 }
-.container .navbar-nav {
- 
-
-  
-}
 /* SHOWCASE */
-.showcase {
-  background-color: var(--shadowMan-color);
-  /* padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem; */
- 
+#showcase {
+  background: var(--shadowMan-color);
+  background-size: cover;
+  min-height: 50vh;
 }
 
-.showcase .container {
+#showcase .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1rem;
-  
+  justify-content: space-around;
 }
-.showcase .container h1{
-  font-size: 35px;
-  font-family: Roboto slab;
-  font-weight: normal;
-  text-align: center;
-  line-height: 1.2;
-  
-}
-
-.showcase .container p{
-  font-size: 17px;
-  font-family: Roboto;
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-.showcase .container img {
-  height: 30rem;
+#showcase .container img {
+  height: 500px;
   display: none;
 }
-.about-clinic {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  
+.content {
+  align-self: center;
+  text-align: center;
+  padding: 5rem;
 }
-
-.showcase .btn {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  width: 239px;
-  height: 60px;
-  font-size: 18px;
-  font-family: Roboto;
-  font-weight: bold;
-  background-color: var(--secondary-color);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  margin-left: 1rem;
-   }
-
-
+.text {
+  margin-bottom: 3rem;
+  color: black;
+}
+.text h1 {
+  font-size: 1.7rem;
+  /* letter-spacing: .1em; */
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+.text p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
 
 
 /* ABOUT US */
@@ -214,8 +200,12 @@ display: none;
   background-color: var(--sec-background-color);
   margin-bottom: 1rem;
 }
-.text{
+.grid .rubrik{
   padding: 1rem;
+  font-size: 30px;
+  font-family: Roboto Slab;
+  font-weight: normal;
+
 }
 .text span hr{
   border: 0;
@@ -227,23 +217,41 @@ display: none;
   margin-left: 50%;
   transform: translate(-50%,-50%);
 }
-.container .grid-card {
+.container .services {
   background-color: var(--sec-background-color);
   display: grid;
   grid-template-columns: 1fr;
-   margin: 0 auto;
+  margin: 0 auto;
+  
 }
 
 .card {
   border: 1px solid blue;
   border-radius: 10px;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: .5rem;
+  /* margin-right: 1rem; */
   background-color: var(--pri-background-color);
   position: relative;
   
 }
+.card p {
+  font-size: 22px;
+  font-family: Roboto Slab;
+  font-weight: normal;
+  
+}
 
+.card .info-text{
+  display: none;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: normal;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.5rem;
+ 
+  
+}
 .circle {
   height: 80px;
   width: 80px;
@@ -253,6 +261,10 @@ display: none;
   background-color: var(--secondary-color);
   border-radius: 50%;
   position: relative;
+}
+
+.circle:hover{
+  background-color: var(--primary-color);
 }
 .image {
   height: 40px;
@@ -276,24 +288,24 @@ p {
 .booking .btn-primary{
     background-color: var(--pri-background-color);
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
-.appointment {
-  background-color: var(--primary-color);
+.appointment .container .text-to-book {
+  background-color: rgb(43, 170, 236, 0.8);
   color: var(--pri-background-color);
 }
 
-.appointment .text {
+.appointment .text-to-book {
   display: flex;
   justify-content: center;  
-  background-color: var(--primary-color);
   color: var(--pri-background-color);
+  padding: 2rem;
 } 
 
 .appointment .booking {
   display: flex;
   justify-content: center; 
-  background-color: var(--primary-color);
+  background-color: rgb(43, 170, 236, 0.8);
   color: var(--pri-background-color);
 }
 .appointment .btn {
@@ -305,30 +317,41 @@ p {
   font-size: 18px;
   font-family: Roboto;
   font-weight: bold;
-  background-color: var(--secondary-color);
-  color: #fff;
+  background-color: var(--pri-background-color);
+  color: var(--primary-color);
   border: none;
   border-radius: 10px;
-  margin-left: 1rem;
-   }
+  }
 /* FOOTER */
 
-.container .social-icons {
+.social-icons {
   display: flex;
   justify-content: space-evenly;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   
 }
-.social-icons a {
+.footer .social-icons a {
   color: var(--primary-color);
 }
 
 a:hover {
   color: var(--secondary-color);
 }
+.c {
+  display: none;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: rgb(151, 205, 235);
+}
 
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  /* Navbar */
   .navbar-toggler {
     display: none;
   }
@@ -338,25 +361,43 @@ a:hover {
   .navbar-nav {
     flex-direction: row;
   }
-  
-  .top-nav {
+    .top-nav {
     display: block;
   }
-  .container {
-    max-width: 720px;
-  }
-  .grid-card {
+  
+  .container .services {
     grid-template-columns: 1fr 1fr;
+    
   }
-  #showcase-container img {
+  .card {
+    height: 22rem;
+    width: 22rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+
+  .card .circle {
+    margin-top: 2rem;
+  }
+  #showcase .container img {
     display: inline-block;
   } 
-  .content {
+ .content {
     text-align: left;
   }
-  .btn {
+  .showcase .btn {
     width: auto;
   } 
+  .social-icons {
+    display: none;
+  }
+  .c {
+    display: block;
+  }
 } 
 
 @media (min-width: 992px) {
@@ -380,7 +421,10 @@ a:hover {
   text-align: left;
   }
 
-
+  .card .info-text{
+    display: block;
+    
+  }
 
 
   /* ABOUT US */
@@ -388,7 +432,7 @@ a:hover {
     display: block;
   }
 
-  .container .grid-card {
+  .container .services {
     /* height: 1349;
     width: 100%; */
     display: grid;
