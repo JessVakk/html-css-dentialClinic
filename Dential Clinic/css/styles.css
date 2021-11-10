@@ -217,7 +217,7 @@ display: none;
   margin-left: 50%;
   transform: translate(-50%,-50%);
 }
-.container .services {
+.services .container {
   background-color: var(--sec-background-color);
   display: grid;
   grid-template-columns: 1fr;
@@ -285,29 +285,33 @@ p {
 
 /* APPOINTMENT   */
 
-.booking .btn-primary{
-    background-color: var(--pri-background-color);
-    color: var(--primary-color);
-    margin-bottom: 2rem;
-}
-.appointment .container .text-to-book {
+
+.appointment{
   background-color: rgb(43, 170, 236, 0.8);
   color: var(--pri-background-color);
 }
 
 .appointment .text-to-book {
   display: flex;
-  justify-content: center;  
-  color: var(--pri-background-color);
+  justify-content: center;   
+  text-align: center;
   padding: 2rem;
+}
+.appointment p{
+  font-size: 30px;
+  font-family: Roboto Slab;
+  font-weight: normal;
+  
 } 
-
+.booking .btn-primary{
+  background-color: var(--pri-background-color);
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
 .appointment .booking {
   display: flex;
   justify-content: center; 
-  background-color: rgb(43, 170, 236, 0.8);
-  color: var(--pri-background-color);
-}
+  }
 .appointment .btn {
   display: flex;
   justify-content: center; 
@@ -323,6 +327,10 @@ p {
   border-radius: 10px;
   }
 /* FOOTER */
+
+.footer {
+ background-color: var(--primary-color);
+}
 
 .social-icons {
   display: flex;
@@ -343,7 +351,15 @@ a:hover {
   text-align: center;
   background-color: var(--primary-color);
   color: rgb(151, 205, 235);
+  padding: 1rem;
 }
+.c p {
+  font-size: 16px;
+}
+
+
+
+
 
 /* MEDIA QUERIES */
 
@@ -365,8 +381,9 @@ a:hover {
     display: block;
   }
   
-  .container .services {
+  .services .container {
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 5rem;
     
   }
   .card {
@@ -376,6 +393,7 @@ a:hover {
     align-items: center;
     display: flex;
     flex-direction: column;
+
     
 
   }
@@ -432,7 +450,7 @@ a:hover {
     display: block;
   }
 
-  .container .services {
+  .services .container {
     /* height: 1349;
     width: 100%; */
     display: grid;
