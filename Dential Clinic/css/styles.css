@@ -79,6 +79,12 @@ html, body {
   margin-left: 2rem;
 }
 /* MAIN-MENU */
+.navbar-container {
+
+}
+.navbar .logo img{
+  height: 3.5rem;
+}
 
 .navbar-nav {
   list-style: none;
@@ -217,7 +223,7 @@ display: none;
   font-weight: normal;
 
 }
-.text span hr{
+.grid .text span hr{
   border: 0;
   border-radius: 10px;
   background:  var(--secondary-color);
@@ -227,12 +233,14 @@ display: none;
   margin-left: 50%;
   transform: translate(-50%,-50%);
 }
+
+
+
 .services .container {
   background-color: var(--sec-background-color);
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
-  
 }
 
 .card {
@@ -241,14 +249,14 @@ display: none;
   margin-left: .5rem;
   /* margin-right: 1rem; */
   background-color: var(--pri-background-color);
-  position: relative;
+  /* position: relative; */
   
 }
 .card p {
   font-size: 22px;
   font-family: Roboto Slab;
   font-weight: normal;
-  
+    
 }
 
 .card .info-text{
@@ -428,10 +436,15 @@ a:hover {
   }
 
   /* Appointment */
-  .appointment  {
-       
+  .appointment .container{
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;
   }
-} 
+  .appointment .booking  {
+    padding-top: 2.5rem;
+    
+    }
 
 @media (min-width: 992px) {
   .container {
@@ -458,7 +471,9 @@ a:hover {
     display: block;
     
   }
-
+  #showcase .text {
+    text-align: left;
+  }
 
   /* ABOUT US */
   .about-us {
