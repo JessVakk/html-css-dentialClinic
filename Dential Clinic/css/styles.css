@@ -119,22 +119,22 @@ display: none;
   height: 500px;
   display: none;
 }
-.content {
+#showcase .content {
   align-self: center;
   text-align: center;
   padding: 5rem;
 }
-.text {
+#showcase .text {
   margin-bottom: 3rem;
   color: black;
 }
-.text h1 {
+#showcase .text h1 {
   font-size: 1.7rem;
   /* letter-spacing: .1em; */
   font-weight: normal;
   margin-bottom: 1rem;
 }
-.text p {
+#showcase .text p {
   font-size: 1.1rem;
   font-weight: 500;
 }
@@ -158,9 +158,22 @@ display: none;
 }
 .about-us .text {
   width: 45rem;
-  margin-bottom: 3rem;
   color: #f0cfb6;
 }
+.survey-grid {
+  background-color: var(--pri-background-color);
+  flex-direction: row;
+  padding-right: 3rem ;
+  padding-top: 2rem;
+}
+
+.about-us span{
+  color: var(--primary-color);
+  font-size: 30px;
+  font-family: Roboto Slab;
+  font-weight: normal;
+}
+
 .about-us h1{
   color: #363636;
   font-family: Roboto Slab;
@@ -172,7 +185,7 @@ display: none;
 .about-us .text p {
   color: #363636;
   font-family: Roboto;
-  font-size: 19px;
+  font-size: 18px;
   text-align: left;
 }
 .about-us .container .content hr{
@@ -186,10 +199,7 @@ display: none;
   margin-bottom: 1.5rem;
   transform: translate(-50%,-50%);
 }
-.survey-text {
-  /* display: flex; */
-  display: column;
-}
+
 
 /* SERVICES */
 
@@ -415,6 +425,11 @@ a:hover {
   }
   .c {
     display: block;
+  }
+
+  /* Appointment */
+  .appointment  {
+       
   }
 } 
 
