@@ -27,26 +27,12 @@ html, body {
   .mt {
     margin-top: 1rem;
   }
-  .p {
-    /* padding: .5rem; */
+  
+  .mb {
+    margin-bottom: 1rem;
   }
 
-  .btn {
-    padding: .75rem 2.5rem;
-    border: 1px solid transparent;
-    border-radius: 1rem;
-    outline: none;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 1rem;
-    background-color: transparent;
-    width: 100%;
-  }
-  .btn-primary {
-    background-color: var(--primary-color);
-    color: #fff;
-  }
+ 
 /* TOP MENU  */
 
 .border {
@@ -114,12 +100,13 @@ display: none;
 #showcase {
   background: var(--shadowMan-color);
   background-size: cover;
-  min-height: 50vh;
+  min-height: 40vh;
 }
 
 #showcase .container {
   display: flex;
   justify-content: space-around;
+  padding-top: 1rem;
 }
 #showcase .container img {
   height: 500px;
@@ -144,7 +131,23 @@ display: none;
   font-size: 1.1rem;
   font-weight: 500;
 }
-
+.btn {
+  padding: 1.5rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 1rem;
+  background-color: transparent;
+  width: 15rem;
+}
+.btn-primary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
 
 /* ABOUT US */
 .about-us {
@@ -159,7 +162,7 @@ display: none;
 }
 .about-us .content {
   width: 55rem;
-  height: 38rem;
+  /* height: 38rem; */
  
 }
 .about-us .text {
@@ -209,12 +212,10 @@ display: none;
 
 /* SERVICES */
 
-
-
-
 .grid{
   background-color: var(--sec-background-color);
-  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+ 
 }
 .grid .rubrik{
   padding: 1rem;
@@ -241,23 +242,28 @@ display: none;
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
-}
+ }
 
 .card {
+  width: 25rem;
   border: 1px solid blue;
   border-radius: 10px;
-  margin-left: .5rem;
-  /* margin-right: 1rem; */
+  justify-content: flex-start;
+  align-items: center;
+  justify-self: center;
   background-color: var(--pri-background-color);
-  /* position: relative; */
-  
+  }
+
+.rubrik-card {
+  padding-left: 2rem;
 }
 .card p {
   font-size: 22px;
   font-family: Roboto Slab;
   font-weight: normal;
-    
 }
+
+
 
 .card .info-text{
   display: none;
@@ -398,12 +404,14 @@ a:hover {
     .top-nav {
     display: block;
   }
-  
+  .grid{
+    padding-top: 3rem;
+  }
   .services .container {
     grid-template-columns: 1fr 1fr;
     padding-bottom: 5rem;
-    
   }
+
   .card {
     height: 22rem;
     width: 22rem;
@@ -411,9 +419,6 @@ a:hover {
     align-items: center;
     display: flex;
     flex-direction: column;
-
-    
-
   }
 
   .card .circle {
@@ -424,6 +429,10 @@ a:hover {
   } 
  .content {
     text-align: left;
+    }
+  #showcase .content {
+    display: flex;
+    flex-direction: column;
   }
   .showcase .btn {
     width: auto;
@@ -474,7 +483,10 @@ a:hover {
   #showcase .text {
     text-align: left;
   }
-
+.btn .btn-primary{
+ 
+  
+}
   /* ABOUT US */
   .about-us {
     display: block;
