@@ -421,7 +421,9 @@ a:hover {
     width: 22rem;
     flex-direction: column;
   }
-
+  .card .info-text{
+    display: block;
+  }
   .card .circle {
     margin-top: 2rem;
   }
@@ -440,10 +442,7 @@ a:hover {
     display: flex;
     flex-direction: column;
   }
-  /* #showcase .btn {
-    width: auto;
-  }  */
-  #showcase .images-woman {
+   #showcase .images-woman {
     width: 65%;
   } 
   .social-icons {
@@ -472,28 +471,27 @@ a:hover {
 
 
 /* SHOWCASE */
-  .showcase .container img {
-    display: block
+#showcase .container img {
+   display: block
   }
-.showcase .container h1{
+#showcase .container h1{
   text-align: left;
 }
-.showcase .content{
+#showcase .content{
   padding-left: 3rem;
 }
-.showcase .container p{
+#showcase .container p{
   text-align: left;
   }
-  #showcase .content {
-      padding: 5rem;
-  }
-  .card .info-text{
-    display: block;
-    
-  }
-  #showcase .text {
-    text-align: left;
-  }
+#showcase .content {
+  padding: 5rem;
+}
+.card .info-text{
+  display: block;
+}
+#showcase .text {
+  text-align: left;
+}
 
   /* ABOUT US */
   .about-us {
