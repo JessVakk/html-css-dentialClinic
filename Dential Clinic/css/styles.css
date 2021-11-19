@@ -14,14 +14,13 @@ html, body {
   /* HJÄLPKLASSER */
 
   .container {
-    width: 100%;
+    width: 80%;
     margin: auto;
     padding: 0 1rem;
   }
   .d-flex {
     display: flex;
-    justify-content:space-between; 
-    
+      
   }
 
   .mt {
@@ -65,9 +64,7 @@ html, body {
   margin-left: 2rem;
 }
 /* MAIN-MENU */
-.navbar-container {
 
-}
 .navbar .logo img{
   height: 3.5rem;
 }
@@ -115,8 +112,8 @@ display: none;
 #showcase .content {
   align-self: center;
   text-align: center;
-  padding: 5rem;
-}
+  padding: 2rem;
+ }
 #showcase .text {
   margin-bottom: 3rem;
   color: black;
@@ -240,17 +237,20 @@ display: none;
 .services .container {
   background-color: var(--sec-background-color);
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr;
-  margin: 0 auto;
+ 
+  
+  
  }
 
 .card {
-  width: 25rem;
+  width: 100%;
   border: 1px solid blue;
   border-radius: 10px;
   justify-content: flex-start;
   align-items: center;
-  justify-self: center;
+  align-content: center;
   background-color: var(--pri-background-color);
   }
 
@@ -258,7 +258,7 @@ display: none;
   padding-left: 2rem;
 }
 .card p {
-  font-size: 22px;
+  font-size: 16px;
   font-family: Roboto Slab;
   font-weight: normal;
 }
@@ -356,11 +356,12 @@ p {
  background-color: var(--primary-color);
 }
 
-.social-icons {
+.footer .container .social-icons {
   display: flex;
   justify-content: space-evenly;
   padding-top: .5rem;
   padding-bottom: .5rem;
+  display: block;
   
 }
 .footer .social-icons a {
@@ -405,37 +406,45 @@ a:hover {
     display: block;
   }
   .grid{
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
   .services .container {
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 5rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-bottom: 5rem;
   }
 
   .card {
     height: 22rem;
     width: 22rem;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     flex-direction: column;
   }
 
   .card .circle {
     margin-top: 2rem;
   }
+
+  .card p {
+    font-size: 22px;
+   
+  }
   #showcase .container img {
     display: inline-block;
   } 
- .content {
+ #showcase .content .text {
     text-align: left;
     }
   #showcase .content {
     display: flex;
     flex-direction: column;
   }
-  .showcase .btn {
+  /* #showcase .btn {
     width: auto;
+  }  */
+  #showcase .images-woman {
+    width: 65%;
   } 
   .social-icons {
     display: none;
@@ -443,7 +452,9 @@ a:hover {
   .c {
     display: block;
   }
-
+  .footer .social-icons {
+      display: none;
+    }
   /* Appointment */
   .appointment .container{
   display: flex;  
@@ -452,8 +463,7 @@ a:hover {
   }
   .appointment .booking  {
     padding-top: 2.5rem;
-    
-    }
+  }
 
 @media (min-width: 992px) {
   .container {
@@ -474,7 +484,9 @@ a:hover {
 .showcase .container p{
   text-align: left;
   }
-
+  #showcase .content {
+      padding: 5rem;
+  }
   .card .info-text{
     display: block;
     
@@ -482,29 +494,26 @@ a:hover {
   #showcase .text {
     text-align: left;
   }
-.btn .btn-primary{
- 
-  
-}
+
   /* ABOUT US */
   .about-us {
     display: block;
   }
 
   .services .container {
-    /* height: 1349;
-    width: 100%; */
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
 
   }
-  .card {
-    /* height: 439px;
-    width: 450px; */
-  }
+  /* .card {
+    height: 439px;
+    width: 450px;
+  } */
 }
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
+}
 }
