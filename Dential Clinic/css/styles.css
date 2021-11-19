@@ -31,16 +31,19 @@ html, body {
     margin-bottom: 1rem;
   }
 
- 
+  .social-icons a {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: none; 
+  }
+  .social-icons a:hover {
+    color: var(--secondary-color);
+  }
 /* TOP MENU  */
 
-.border {
-  border: solid 1px blue;
-}
-
 .top-nav {
-  border-color: #707070;
-  display: none;
+  border: solid 1px #707070;
+  /* display: none; */
  }
 
  .top-nav .container,
@@ -72,9 +75,11 @@ html, body {
 .navbar-nav {
   list-style: none;
   display: flex;
+  font-family: 'Roboto slab"';
 }
 .navbar-nav li a {
 text-decoration: none;
+color: #363636;
 }
 
  .nav-link {
@@ -120,7 +125,6 @@ display: none;
 }
 #showcase .text h1 {
   font-size: 1.7rem;
-  /* letter-spacing: .1em; */
   font-weight: normal;
   margin-bottom: 1rem;
 }
@@ -159,8 +163,7 @@ display: none;
 }
 .about-us .content {
   width: 55rem;
-  /* height: 38rem; */
- 
+   
 }
 .about-us .text {
   width: 45rem;
@@ -232,27 +235,22 @@ display: none;
   transform: translate(-50%,-50%);
 }
 
-
-
 .services .container {
   background-color: var(--sec-background-color);
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
- 
-  
-  
  }
 
 .card {
   width: 100%;
-  border: 1px solid blue;
+  border: 1px transparent;
   border-radius: 10px;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
   background-color: var(--pri-background-color);
-  }
+}
 
 .rubrik-card {
   padding-left: 2rem;
@@ -262,9 +260,6 @@ display: none;
   font-family: Roboto Slab;
   font-weight: normal;
 }
-
-
-
 .card .info-text{
   display: none;
   font-size: 16px;
@@ -273,8 +268,6 @@ display: none;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 1.5rem;
- 
-  
 }
 .circle {
   height: 80px;
@@ -308,7 +301,6 @@ p {
 }
 
 /* APPOINTMENT   */
-
 
 .appointment{
   background-color: rgb(43, 170, 236, 0.8);
@@ -356,13 +348,12 @@ p {
  background-color: var(--primary-color);
 }
 
-.footer .container .social-icons {
+ .footer-icons a{
   display: flex;
   justify-content: space-evenly;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  display: block;
-  
+ 
 }
 .footer .social-icons a {
   color: var(--primary-color);
@@ -381,7 +372,9 @@ a:hover {
 .c p {
   font-size: 16px;
 }
-
+.footer-icons{
+  display: block;
+}
 
 
 
@@ -392,6 +385,10 @@ a:hover {
   .container {
     max-width: 720px;
   }
+  .social-icons a {
+    display: inline-block;
+  }
+  
   /* Navbar */
   .navbar-toggler {
     display: none;
@@ -401,6 +398,7 @@ a:hover {
   }
   .navbar-nav {
     flex-direction: row;
+    align-items: center;
   }
     .top-nav {
     display: block;
@@ -445,13 +443,11 @@ a:hover {
    #showcase .images-woman {
     width: 65%;
   } 
-  .social-icons {
-    display: none;
-  }
+  
   .c {
     display: block;
   }
-  .footer .social-icons {
+  .footer-icons {
       display: none;
     }
   /* Appointment */
@@ -464,11 +460,13 @@ a:hover {
     padding-top: 2.5rem;
   }
 
+
+
+
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
-
 
 /* SHOWCASE */
 #showcase .container img {
@@ -486,9 +484,7 @@ a:hover {
 #showcase .content {
   padding: 5rem;
 }
-.card .info-text{
-  display: block;
-}
+
 #showcase .text {
   text-align: left;
 }
@@ -497,18 +493,16 @@ a:hover {
   .about-us {
     display: block;
   }
-
+/* OUR SERVICES */
   .services .container {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
-
   }
-  /* .card {
-    height: 439px;
-    width: 450px;
-  } */
-}
+  .card .info-text{
+    display: block;
+  }
+ }
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
