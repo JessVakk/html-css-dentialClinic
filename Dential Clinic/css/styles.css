@@ -43,7 +43,7 @@ html, body {
 
 .top-nav {
   border: solid 1px #707070;
-  /* display: none; */
+  display: none;
  }
 
  .top-nav .container,
@@ -149,7 +149,9 @@ display: none;
   background-color: var(--secondary-color);
   color: #fff;
 }
-
+.btn-primary:hover{
+  background-color: var(--primary-color);
+}
 /* ABOUT US */
 .about-us {
   background-color: var(--pri-background-color);
@@ -347,21 +349,6 @@ p {
 .footer {
  background-color: var(--primary-color);
 }
-
- .footer-icons a{
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
- 
-}
-.footer .social-icons a {
-  color: var(--primary-color);
-}
-
-a:hover {
-  color: var(--secondary-color);
-}
 .c {
   display: none;
   text-align: center;
@@ -372,9 +359,27 @@ a:hover {
 .c p {
   font-size: 16px;
 }
-.footer-icons{
-  display: block;
+.mobile-footer .container
+ .footer-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background-color: var(--pri-background-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+ }
+ 
+
+.footer-icons a:hover {
+  color: var(--secondary-color);
 }
+
+.mobile-footer .container .footer-icons a {
+  text-decoration: none;
+  color: var(--primary-color);
+  display: block; 
+}
+
 
 
 
@@ -443,13 +448,13 @@ a:hover {
    #showcase .images-woman {
     width: 65%;
   } 
-  
+  .mobile-footer .container .footer-icons a{
+    display: none;
+  }
   .c {
     display: block;
   }
-  .footer-icons {
-      display: none;
-    }
+  
   /* Appointment */
   .appointment .container{
   display: flex;  
@@ -459,8 +464,13 @@ a:hover {
   .appointment .booking  {
     padding-top: 2.5rem;
   }
-
-
+  .footer-icons {
+    display: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  
 
 
 @media (min-width: 992px) {
