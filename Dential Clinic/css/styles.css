@@ -327,14 +327,15 @@ p {
   font-weight: normal;
   
 } 
-.booking .btn-primary{
-  background-color: var(--pri-background-color);
-  color: var(--primary-color);
-  margin-bottom: 2rem;
-}
+
 .appointment .booking {
   display: flex;
   justify-content: center; 
+  }
+  .booking .btn-primary{
+    background-color: var(--pri-background-color);
+    color: var(--primary-color);
+    margin-bottom: 2rem;
   }
 .appointment .btn {
   display: flex;
@@ -349,6 +350,11 @@ p {
   color: var(--primary-color);
   border: none;
   border-radius: 10px;
+  }
+  .appointment .btn-primary:hover{
+    background-color: var(--primary-color);
+    color: rgb(43, 170, 236, 0.8); 
+    border: solid 1px var(--pri-background-color); 
   }
 /* FOOTER */
 
@@ -512,8 +518,6 @@ p {
    
   #about-us .container img {
     display: block;
-   
-    
   }
   
   #about-us .text {
