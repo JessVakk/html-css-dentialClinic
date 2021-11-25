@@ -30,7 +30,9 @@ html, body {
   .mb {
     margin-bottom: 1rem;
   }
-
+.border{
+  border:solid blue;
+}
   .social-icons a {
     text-decoration: none;
     color: var(--primary-color);
@@ -42,7 +44,7 @@ html, body {
 /* TOP MENU  */
 
 .top-nav {
-  border: solid 1px #7070707a;
+  border-bottom: solid 1px #7070707a;
   display: none;
  }
 
@@ -152,20 +154,24 @@ display: none;
   background-color: var(--primary-color);
 }
 /* ABOUT US */
-.about-us {
+#about-us {
   background-color: var(--pri-background-color);
   padding-top: 3rem;
 }
-.about-us .container img {
+#about-us .container {
+  background-color: var(--pri-background-color);
+  padding-top: 1rem;
+  
+  padding-bottom: 3rem;
+}
+#about-us .container img {
   height: 32rem;
   display: none;
 }
-.about-us .content {
- justify-content: center;
- align-items: center;
- align-content: center;
+#about-us .content {
+  align-content: center;
 }
-.about-us .text {
+#about-us .text {
   color: #f0cfb6;
 }
 .survey-grid {
@@ -175,13 +181,13 @@ display: none;
   padding-right: 1rem;
   padding-top: 2rem;
 }
-.about-us span{
+#about-us span{
   color: var(--primary-color);
   font-size: 30px;
   font-family: 'Roboto Slab';
   font-weight: normal;
 }
-.about-us h1{
+#about-us h1{
   color: #363636;
   font-family: 'Roboto Slab';
   font-size: 25px;
@@ -189,20 +195,14 @@ display: none;
   text-align: center;
   padding-bottom: 1rem;
  }
-.about-us .container {
-  background-color: var(--pri-background-color);
-  padding-top: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
-}
-.about-us .text p {
+
+#about-us .text p {
   color: #363636;
   font-family: 'Roboto';
   font-size: 16px;
   text-align: center;
  }
-.about-us .container .content hr{
+#about-us .container .content hr{
   display: none;
   border: 0;
   border-radius: 10px;
@@ -256,7 +256,9 @@ display: none;
   align-content: center;
   background-color: var(--pri-background-color);
 }
-
+.card:hover {
+  box-shadow: 0 0 10px 4px var(--shadowMan-color);
+ }
 .rubrik-card {
   padding-left: 2rem;
 }
@@ -287,6 +289,7 @@ display: none;
 
 .circle:hover{
   background-color: var(--primary-color);
+  box-shadow: 0 0 15px 5px #2ba8ec81;
 }
 .image {
   height: 40px;
@@ -507,16 +510,13 @@ p {
   padding-bottom: -2rem;
   } */
    
-  .about-us .container img {
+  #about-us .container img {
     display: block;
-    height: 32rem;
+   
     
   }
-  .about-us .content {
-    width: 55rem;
-     
-  }
-  .about-us .text {
+  
+  #about-us .text {
     width: 45rem;
     color: #f0cfb6;
   }
@@ -528,14 +528,14 @@ p {
     padding-top: 2rem;
   }
   
-  .about-us span{
+  #about-us span{
     color: var(--primary-color);
     font-size: 30px;
     font-family: Roboto Slab;
     font-weight: normal;
   }
   
-  .about-us h1{
+  #about-us h1{
     color: #363636;
     font-family: Roboto Slab;
     font-size: 30px;
@@ -543,13 +543,14 @@ p {
     text-align: left;
    }
   
-  .about-us .text p {
+  #about-us .text p {
     color: #363636;
     font-family: Roboto;
     font-size: 18px;
     text-align: left;
+   
   }
-  .about-us .container .content hr{
+  #about-us .container .content hr{
     display: block;
     border: 0;
     border-radius: 10px;
