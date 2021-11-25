@@ -466,15 +466,15 @@ p {
 #showcase .container h1{
   text-align: left;
 }
-#showcase .content{
+/* #showcase .content{
   padding-left: 3rem;
-}
+} */
 #showcase .container p{
   text-align: left;
   }
-#showcase .content {
+/* #showcase .content {
   padding: 5rem;
-}
+} */
 #showcase .text {
   text-align: left;
 }
