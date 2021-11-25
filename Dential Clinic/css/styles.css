@@ -1,18 +1,15 @@
 @import './colors.css';
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html, body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5;
   }
  
   /* HJÄLPKLASSER */
-
   .container {
     width: 80%;
     margin: auto;
@@ -22,7 +19,6 @@ html, body {
     display: flex;
       
   }
-
   .mt {
     margin-top: 1rem;
   }
@@ -30,9 +26,9 @@ html, body {
   .mb {
     margin-bottom: 1rem;
   }
-.border{
+/* .border{
   border:solid blue;
-}
+} */
   .social-icons a {
     text-decoration: none;
     color: var(--primary-color);
@@ -42,12 +38,10 @@ html, body {
     color: var(--secondary-color);
   }
 /* TOP MENU  */
-
 .top-nav {
   border-bottom: solid 1px #7070707a;
   display: none;
  }
-
  .top-nav .container,
  .navbar .container{
   display: flex;
@@ -55,12 +49,10 @@ html, body {
   align-items: center; 
   background-color: var(--pri-background-color);
  }
-
 .top-nav .container span {
   padding-right: .5rem;
   color: var(--primary-color);
 }
-
 .top-nav p{
   font-size: 16px;
   font-family: 'Roboto';
@@ -69,11 +61,9 @@ html, body {
   margin-left: 2rem;
 }
 /* MAIN-MENU */
-
 .navbar .logo img{
   height: 3.5rem;
 }
-
 .navbar-nav {
   list-style: none;
   display: flex;
@@ -83,7 +73,6 @@ html, body {
 text-decoration: none;
 color: #363636;
 }
-
  .nav-link {
    margin-left: 2rem;
  }   
@@ -91,7 +80,6 @@ color: #363636;
 .collapse:not(.show) {
 display: none;
 }
-
 .navbar-toggler{
   background-color: transparent;
   border: none;
@@ -103,9 +91,8 @@ display: none;
 #showcase {
   background: var(--shadowMan-color);
   background-size: cover;
-  min-height: 40vh;
+  /* min-height: 40vh; */
 }
-
 #showcase .container {
   display: flex;
   justify-content: space-around;
@@ -122,7 +109,7 @@ display: none;
  }
 #showcase .text {
   margin-bottom: 3rem;
-  color: black;
+  color: #363636;
 }
 #showcase .text h1 {
   font-size: 1.7rem;
@@ -161,11 +148,10 @@ display: none;
 #about-us .container {
   background-color: var(--pri-background-color);
   padding-top: 1rem;
-  
-  padding-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 #about-us .container img {
-  height: 32rem;
+  height: 500px;
   display: none;
 }
 #about-us .content {
@@ -195,7 +181,6 @@ display: none;
   text-align: center;
   padding-bottom: 1rem;
  }
-
 #about-us .text p {
   color: #363636;
   font-family: 'Roboto';
@@ -214,9 +199,7 @@ display: none;
   margin-bottom: 1.5rem;
   transform: translate(-50%,-50%);
 }
-
 /* SERVICES */
-
 .grid{
   background-color: var(--sec-background-color);
   padding-bottom: 2rem;
@@ -227,7 +210,6 @@ display: none;
   font-size: 30px;
   font-family: Roboto Slab;
   font-weight: normal;
-
 }
 .grid .text span hr{
   border: 0;
@@ -239,14 +221,12 @@ display: none;
   margin-left: 50%;
   transform: translate(-50%,-50%);
 }
-
 .services .container {
   background-color: var(--sec-background-color);
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
  }
-
 .card {
   width: 100%;
   border: 1px transparent;
@@ -286,10 +266,10 @@ display: none;
   border-radius: 50%;
   position: relative;
 }
-
-.circle:hover{
+.card:hover .circle{
   background-color: var(--primary-color);
-  box-shadow: 0 0 15px 5px #2ba8ec81;
+  outline: 10px solid #a2cfe781;
+  
 }
 .image {
   height: 40px;
@@ -303,18 +283,14 @@ display: none;
   font-size: 22;
   text-align: center;
 }
-
 p {
   font-size: 18px;
 }
-
 /* APPOINTMENT   */
-
 .appointment{
   background-color: rgb(43, 170, 236, 0.8);
   color: var(--pri-background-color);
 }
-
 .appointment .text-to-book {
   display: flex;
   justify-content: center;   
@@ -325,8 +301,13 @@ p {
   font-size: 30px;
   font-family: Roboto Slab;
   font-weight: normal;
-  
+
 } 
+.booking .btn-primary{
+  background-color: var(--pri-background-color);
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
 
 .appointment .booking {
   display: flex;
@@ -351,10 +332,11 @@ p {
   border: none;
   border-radius: 10px;
   }
-  .appointment .btn-primary:hover{
-    background-color: var(--primary-color);
-    color: rgb(43, 170, 236, 0.8); 
-    border: solid 1px var(--pri-background-color); 
+  .booking .btn:hover{
+    background-color: transparent; 
+    color: #fff;
+    font-size: 17;
+    border: 1px solid var(--pri-background-color); 
   }
 /* FOOTER */
 
@@ -381,23 +363,15 @@ p {
   padding-bottom: 1rem;
  }
  
-
 .footer-icons a:hover {
   color: var(--secondary-color);
 }
-
 .mobile-footer .container .footer-icons a {
   text-decoration: none;
   color: var(--primary-color);
   display: block; 
 }
-
-
-
-
-
 /* MEDIA QUERIES */
-
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -430,7 +404,6 @@ p {
   gap: 1rem;
   padding-bottom: 5rem;
   }
-
   .card {
     height: 22rem;
     width: 22rem;
@@ -442,7 +415,6 @@ p {
   .card .circle {
     margin-top: 2rem;
   }
-
   .card p {
     font-size: 22px;
    
@@ -483,13 +455,10 @@ p {
     align-items: center; 
   }
   
-
-
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
-
 /* SHOWCASE */
 #showcase .container img {
    display: block
@@ -506,20 +475,21 @@ p {
 #showcase .content {
   padding: 5rem;
 }
-
 #showcase .text {
   text-align: left;
 }
-
   /* ABOUT US */
   /* .about-us .container {
   padding-bottom: -2rem;
   } */
-   
+  
+
   #about-us .container img {
     display: block;
+
+
   }
-  
+
   #about-us .text {
     width: 45rem;
     color: #f0cfb6;
