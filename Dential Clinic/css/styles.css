@@ -87,6 +87,9 @@ display: none;
   font-size: 2rem;
   color: var(--primary-color);
 }
+.nav-link a:hover{
+  color: var(--secondary-color);
+}
 /* SHOWCASE */
 #showcase {
   background: var(--shadowMan-color);
@@ -221,7 +224,7 @@ display: none;
   margin-left: 50%;
   transform: translate(-50%,-50%);
 }
-.services .container {
+#services .container {
   background-color: var(--sec-background-color);
   display: grid;
   justify-content: center;
@@ -287,17 +290,17 @@ p {
   font-size: 18px;
 }
 /* APPOINTMENT   */
-.appointment{
+#appointment{
   background-color: rgb(43, 170, 236, 0.8);
   color: var(--pri-background-color);
 }
-.appointment .text-to-book {
+#appointment .text-to-book {
   display: flex;
   justify-content: center;   
   text-align: center;
   padding: 2rem;
 }
-.appointment p{
+#appointment p{
   font-size: 30px;
   font-family: Roboto Slab;
   font-weight: normal;
@@ -309,7 +312,7 @@ p {
   margin-bottom: 2rem;
 }
 
-.appointment .booking {
+#appointment .booking {
   display: flex;
   justify-content: center; 
   }
@@ -318,7 +321,7 @@ p {
     color: var(--primary-color);
     margin-bottom: 2rem;
   }
-.appointment .btn {
+#appointment .btn {
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -376,6 +379,10 @@ p {
   .container {
     max-width: 720px;
   }
+
+  .top-nav .container{
+    margin-top: 1rem;
+  }
   .social-icons a {
     display: inline-block;
   }
@@ -397,7 +404,7 @@ p {
   .grid{
     padding-top: 2rem;
   }
-  .services .container {
+  #services .container {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
@@ -442,13 +449,14 @@ p {
   }
   
   /* Appointment */
-  .appointment .container{
+  #appointment .container{
   display: flex;  
   justify-content: space-between;  
   align-items: center;
   }
-  .appointment .booking  {
+  #appointment .booking  {
     padding-top: 2.5rem;
+    
   }
   .footer-icons {
     display: none;
@@ -465,30 +473,20 @@ p {
 #showcase .container h1{
   text-align: left;
 }
-/* #showcase .content{
-  padding-left: 3rem;
-} */
 #showcase .container p{
   text-align: left;
   }
-/* #showcase .content {
-  padding: 5rem;
-} */
 #showcase .text {
   text-align: left;
 }
   /* ABOUT US */
-  /* .about-us .container {
   
-  } */
   #about-us .container {
     margin-bottom: 0;
   }
 
   #about-us .container img {
     display: block;
-
-
   }
 
   #about-us .text {
@@ -539,7 +537,7 @@ p {
   }
   
 /* OUR SERVICES */
-  .services .container {
+  #services .container {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
