@@ -434,7 +434,7 @@ p {
     width: 65%;
   } 
   
-  .mobile-footer .container .footer-icons a{
+  .mobile-footer .container .footer-icons {
     display: none;
   }
   .c {
@@ -452,9 +452,6 @@ p {
   }
   .footer-icons {
     display: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
   }
   
 @media (min-width: 992px) {
