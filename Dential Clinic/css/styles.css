@@ -123,7 +123,7 @@ display: none;
   font-size: 1.1rem;
   font-weight: 500;
 }
-.btn {
+#showcase .btn {
   padding: 1.5rem 2rem;
   border: 1px solid transparent;
   border-radius: 1rem;
@@ -136,11 +136,11 @@ display: none;
   background-color: transparent;
   width: 15rem;
 }
-.btn-primary {
+#showcase .btn-primary {
   background-color: var(--secondary-color);
   color: #fff;
 }
-.btn-primary:hover{
+#showcase .btn-primary:hover{
   background-color: var(--primary-color);
 }
 /* ABOUT US */
@@ -306,7 +306,7 @@ p {
   font-weight: normal;
 
 } 
-.booking .btn-primary{
+#appointment .booking .btn-primary{
   background-color: var(--pri-background-color);
   color: var(--primary-color);
   margin-bottom: 2rem;
@@ -316,12 +316,12 @@ p {
   display: flex;
   justify-content: center; 
   }
-  .booking .btn-primary{
+  #appointment .booking .btn-primary{
     background-color: var(--pri-background-color);
     color: var(--primary-color);
     margin-bottom: 2rem;
   }
-#appointment .btn {
+  #appointment .booking .btn {
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -335,11 +335,11 @@ p {
   border: none;
   border-radius: 10px;
   }
-  .booking .btn:hover{
+  #appointment .booking .btn:hover{
     background-color: transparent; 
     color: #fff;
-    font-size: 17;
-    border: 1px solid var(--pri-background-color); 
+    font-size: 17px;
+    border: 0.5px solid var(--pri-background-color); 
   }
 /* FOOTER */
 
