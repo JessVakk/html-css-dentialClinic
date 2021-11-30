@@ -11,9 +11,9 @@ html, body {
  
   /* HJÄLPKLASSER */
   .container {
-    width: 80%;
     margin: auto;
     padding: 0 1rem;
+    max-width: 540px;
   }
   .d-flex {
     display: flex;
@@ -150,7 +150,7 @@ display: none;
 }
 #about-us .container {
   background-color: var(--pri-background-color);
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   margin-bottom: 2rem;
 }
 #about-us .container img {
@@ -160,10 +160,10 @@ display: none;
 #about-us .content {
   justify-content: center;
   align-items: center;
-  
 }
 #about-us .text {
   color: #f0cfb6;
+  padding: 1rem;
 }
 .survey-grid {
   background-color: var(--pri-background-color);
@@ -184,8 +184,9 @@ display: none;
   font-size: 25px;
   font-weight: normal;
   text-align: center;
- 
- }
+  padding-bottom: 1rem;
+  
+}
 #about-us .text p {
   color: #363636;
   font-family: 'Roboto';
@@ -197,7 +198,7 @@ display: none;
   border: 0;
   border-radius: 10px;
   background:  var(--secondary-color);
-  width: 550px;
+  width: 50%;
   height: 3.5px;
   margin-left:17rem;
   transform: translate(-50%,-50%);
@@ -375,6 +376,7 @@ p {
   display: block; 
 }
 /* MEDIA QUERIES */
+/* --------------------------------768------------------------------- */
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -428,6 +430,8 @@ p {
  
   #showcase .container img {
     display: inline-block;
+    align-self: flex-end;
+    height: 25rem;
   } 
  #showcase .content .text {
     text-align: left;
@@ -440,7 +444,18 @@ p {
    #showcase .images-woman {
     width: 65%;
   } 
-  
+  #about-us .container {
+    margin-bottom: 0;
+  }
+  #about-us .container img {
+    display: block;
+    align-self: flex-end;
+    height: 25rem;
+  }
+  #about-us .text {
+    width: 35rem;
+    color: #f0cfb6;
+  }
   .mobile-footer .container .footer-icons {
     display: none;
   }
@@ -461,14 +476,15 @@ p {
   .footer-icons {
     display: none;
   }
-  
+/* --------------------------------992------------------------------- */
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
 /* SHOWCASE */
 #showcase .container img {
-   display: block
+   display: block;
+   height: 35rem;
   }
 #showcase .container h1{
   text-align: left;
@@ -484,14 +500,8 @@ p {
   #about-us .container {
     margin-bottom: 0;
   }
-
   #about-us .container img {
-    display: block;
-  }
-
-  #about-us .text {
-    width: 45rem;
-    color: #f0cfb6;
+     height: 35rem;
   }
   .survey-grid {
     background-color: var(--pri-background-color);
@@ -546,9 +556,13 @@ p {
     display: block;
   }
  }
+ /* --------------------------------1200------------------------------- */
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
+  }
+    #about-us .text {
+    width: 45rem;
   }
 }
 }
