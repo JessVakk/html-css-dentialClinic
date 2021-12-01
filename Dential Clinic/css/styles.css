@@ -37,8 +37,10 @@ html, body {
   background-color: var(--pri-background-color);
 }
 .top-nav p{
-  font-size: 16px;
+  font-size: .9rem;
   font-family: 'Roboto';
+  font-weight: normal;
+  color: var(--text-color);
 }
 .top-nav .container span {
   padding-right: .5rem;
@@ -62,7 +64,7 @@ html, body {
 .nav .container{
   display: flex;
   justify-content: space-between;
-  
+  background-color: var(--pri-background-color);
 }
 .nav-toogle {
   cursor: pointer;
@@ -96,8 +98,9 @@ html, body {
 }
 .nav-link a{
   text-decoration: none;
-  color: #363636;
-  font-size: 18px;
+  color: var(--title-color);
+  font-size: 1rem;
+  font-weight: normal;
   font-family: 'Roboto slab';
 }
 .nav-link a:hover {
@@ -128,16 +131,20 @@ html, body {
  }
 #showcase .text {
   margin-bottom: 3rem;
-  color: #363636;
+  
 }
 #showcase .text h1 {
-  font-size: 1.7rem;
+  font-family: 'Roboto Slab';
+  color: var(--title-color);
+  font-size: 3rem;
   font-weight: normal;
   margin-bottom: 1rem;
 }
 #showcase .text p {
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-family: 'Roboto';
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: normal;
 }
 #showcase .btn {
   padding: 1.5rem 2rem;
@@ -147,14 +154,13 @@ html, body {
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
-  font-size: 18px;
   font-size: 1rem;
   background-color: transparent;
   width: 15rem;
 }
 #showcase .btn-primary {
   background-color: var(--secondary-color);
-  color: #fff;
+  color: var(--pri-background-color);
 }
 #showcase .btn-primary:hover{
   background-color: var(--primary-color);
@@ -175,20 +181,19 @@ html, body {
   align-items: center;
 }
 #about-us .text {
-  color: #f0cfb6;
-  padding: 1rem;
+   padding: 1rem;
 }
 #about-us h1{
-  color: #363636;
+  color: var(--title-color);
   font-family: 'Roboto Slab';
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: normal;
   text-align: center;
   padding-bottom: 1rem;
 }
 #about-us span{
   color: var(--primary-color);
-  font-size: 30px;
+  font-size: 2.5rem;
   font-family: 'Roboto Slab';
   font-weight: normal;
 }
@@ -203,10 +208,17 @@ html, body {
   transform: translate(-50%,-50%);
 }
 #about-us .text p {
-  color: #363636;
+  color: var(--text-color);
   font-family: 'Roboto';
-  font-size: 16px;
+  font-weight: normal;
+  font-size: 1rem;
   text-align: center;
+}
+#about-us .undertext {
+  color: var(--text-color);
+  font-family: 'Roboto slab';
+  font-weight: normal;
+  font-size: 1rem;
 }
 #about-us .survey-grid {
   background-color: var(--pri-background-color);
@@ -225,10 +237,12 @@ html, body {
   padding-bottom: 2rem;
 }
 .grid .rubrik{
-  padding: 1rem;
-  font-size: 30px;
-  font-family: Roboto Slab;
+  color: var(--title-color);
+  font-family:'Roboto slab';
   font-weight: normal;
+  font-size: 2.5rem;
+  padding: 1rem;
+  
 }
 .grid .text span hr{
   display: none;
@@ -280,22 +294,22 @@ html, body {
   transform: translate(-50%, -50%);
 }
 .text {
-  font-family: Roboto slab;
-  font-size: 22;
-  text-align: center;
+    text-align: center;
 }
 .rubrik-card {
   padding-left: 2rem;
 }
-.card p {
-  font-size: 16px;
-  font-family: Roboto Slab;
+.card h3 {
+  color: var(--title-color);
+  font-size: 1.4rem;
+  font-family: 'Roboto Slab';
   font-weight: normal;
 }
-.card .info-text{
+.card .info-text {
   display: none;
-  font-size: 16px;
-  font-family: Roboto;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-family: 'Roboto';
   font-weight: normal;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -317,9 +331,10 @@ html, body {
   padding: 2rem;
 }
 #appointment p{
-  font-size: 30px;
-  font-family: Roboto Slab;
+  color: var(--pri-background-color);
+  font-family: 'Roboto slab';
   font-weight: normal;
+  font-size: 1.8rem;
 } 
 #appointment .booking {
   display: flex;
@@ -336,8 +351,8 @@ html, body {
   align-items: center;
   width: 239px;
   height: 60px;
-  font-size: 18px;
-  font-family: Roboto;
+  font-family: 'Roboto';
+  font-size: 1rem;
   font-weight: bold;
   background-color: var(--pri-background-color);
   color: var(--primary-color);
@@ -347,7 +362,7 @@ html, body {
 #appointment .booking .btn:hover{
    background-color: transparent; 
    color: #fff;
-   font-size: 17px;
+   font-size: 1rem;
    border: 0.5px solid var(--pri-background-color); 
 }
 /* ---------------FOOTER START------------------------------------- */
@@ -359,11 +374,13 @@ html, body {
   display: none;
   text-align: center;
   background-color: var(--primary-color);
-  color: rgb(151, 205, 235);
   padding: 1rem;
 }
 .c p {
-  font-size: 16px;
+  font-size: .9rem;
+  font-family: 'Roboto';
+  font-weight: normal;
+  color: rgba(243, 251, 255, 0.6);
 }
 .mobile-footer .container .footer-icons{
   display: flex;
@@ -388,6 +405,7 @@ html, body {
   .container {
     max-width: 720px;
   }
+  /*------- TOP-MENU------------ */
   .top-nav {
     display: block;
   }
@@ -398,47 +416,74 @@ html, body {
     display: inline-block;
   }
   
-  /* Navbar */
+  /*------ MAIN-MENU---------- */
   .nav .container{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     align-items: center; 
-    background-color: var(--pri-background-color);
     padding-right: 0;
   }   
   .nav-toogle {
     display: none;
   }
-    .nav-menu{
+  .nav-menu{
     position: relative;
     flex-direction: row;
-    gap: 1.5rem;
     align-items: center;
     margin: 1rem;
   }
   .nav-link {
     display: block;
   }
-  /* -------about-us-------------- */
-  .grid{
+
+  /* -------SHOWCASE-------------- */
+   #showcase .container img {
+    display: inline-block;
+    align-self: flex-end;
+    height: 28rem;
+  } 
+  #showcase .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+  }
+  #showcase .content .text {
+    text-align: left;
+  }
+
+  /* -------ABOUT-US-------------- */
+  #about-us .container {
+    margin-bottom: 0;
+  }
+  #about-us .container img {
+    display: block;
+    align-self: flex-end;
+    height: 28rem;
+  }
+  #about-us .text {
+    width: 35rem;
+    /* color: #f0cfb6; */
+  }
+
+   /* -------SERVICES-------------- */
+   .grid{
     padding-top: 2rem;
   }
   #services .container {
-  display: grid;
-  justify-content: center;
+  /* display: grid;
+  justify-content: center; */
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   padding-bottom: 5rem;
   }
   .card {
-    width: 100%;
+    /* width: 100%; */
     height: 20rem;
-    border: 1px transparent;
+    /* border: 1px transparent;
     border-radius: 10px;
-    /* justify-content: flex-start; */
     align-items: center;
     align-content: center;
-    background-color: var(--pri-background-color);
+    background-color: var(--pri-background-color); */
     flex-direction: column;
   }
   .rubrik-card {
@@ -453,43 +498,8 @@ html, body {
   .card p {
     font-size: 22px;
   }
- 
-  #showcase .container img {
-    display: inline-block;
-    align-self: flex-end;
-    height: 25rem;
-  } 
- #showcase .content .text {
-    text-align: left;
-    }
-  #showcase .content {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5rem;
-  }
-   #showcase .images-woman {
-    width: 65%;
-  } 
-  #about-us .container {
-    margin-bottom: 0;
-  }
-  #about-us .container img {
-    display: block;
-    align-self: flex-end;
-    height: 25rem;
-  }
-  #about-us .text {
-    width: 35rem;
-    color: #f0cfb6;
-  }
-  .mobile-footer .container .footer-icons {
-    display: none;
-  }
-  .c {
-    display: block;
-  }
   
-  /* Appointment */
+  /*----------- APPOINTMENT-------------- */
   #appointment .container{
   display: flex;  
   justify-content: space-between;  
@@ -499,93 +509,98 @@ html, body {
     padding-top: 2.5rem;
     
   }
-  .footer-icons {
+  /* ------------FOOTER-------------- */
+  .c {
+    display: block;
+  }
+  .mobile-footer .container .footer-icons {
     display: none;
   }
+ 
+
+
 /* --------------------------------992------------------------------- */
+
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
-/* SHOWCASE */
+/*----------------------SHOWCASE----------------- */
 #showcase .container img {
    display: block;
    height: 35rem;
-  }
+}
+#showcase .text {
+   text-align: left;
+}
 #showcase .container h1{
   text-align: left;
 }
 #showcase .container p{
   text-align: left;
-  }
-#showcase .text {
+}
+
+  /*------------- ABOUT US----------- */
+/* #about-us .container {
+  margin-bottom: 0;
+} */
+#about-us .container img {
+  height: 35rem;
+}
+.survey-grid {
+  /* background-color: var(--pri-background-color);
+  flex-direction: row;
+  justify-content: space-between; */
+  padding-right: 3rem ;
+  padding-top: 2rem;
+}
+#about-us h1{
+  /* color: #363636;
+  font-family: 'Roboto Slab'; */
+  font-size: 30px;
+  /* font-weight: normal; */
   text-align: left;
 }
-  /* ABOUT US */
-  
-  #about-us .container {
-    margin-bottom: 0;
-  }
-  #about-us .container img {
-     height: 35rem;
-  }
-  .survey-grid {
-    background-color: var(--pri-background-color);
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 3rem ;
-    padding-top: 2rem;
-  }
-  
-  #about-us span{
-    color: var(--primary-color);
-    font-size: 30px;
-    font-family: Roboto Slab;
-    font-weight: normal;
-  }
-  
-  #about-us h1{
-    color: #363636;
-    font-family: Roboto Slab;
-    font-size: 30px;
-    font-weight: normal;
-    text-align: left;
-   }
-  
-  #about-us .text p {
-    color: #363636;
-    font-family: Roboto;
-    font-size: 18px;
-    text-align: left;
-   
-  }
-  #about-us .container .content hr{
-    display: block;
-    border: 0;
-    border-radius: 10px;
-    background:  var(--secondary-color);
-    width: 550px;
-    height: 3.5px;
-    margin-left:17rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    transform: translate(-50%,-50%);
-  }
-  
-/* OUR SERVICES */
-  #services .container {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-     
-  }
-  .grid .text span hr{
-    display: block;
-    }
-  .card .info-text{
-    display: block;
-  }
+/* #about-us span{
+  color: var(--primary-color);
+  font-size: 30px;
+  font-family: Roboto Slab;
+  font-weight: normal;
+} */
+#about-us .container .content hr{
+  display: block;
+  /* border: 0; */
+  /* border-radius: 10px;
+  background:  var(--secondary-color); */
+  width: 550px;
+  /* height: 3.5px; */
+  /* margin-left:17rem; */
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  /* transform: translate(-50%,-50%); */
+}  
+#about-us .text p {
+  /* color: #363636;
+  font-family: Roboto; */
+  font-size: 18px;
+  text-align: left;
+}
+ 
+/*------------------- SERVICES---------------- */
+.grid .text span hr{
+  display: block;
+}  
+#services .container {
+  /* display: grid;
+  justify-content: center; */
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card .info-text{
+  display: block;
  }
+}
+
+
  /* --------------------------------1200------------------------------- */
 @media (min-width: 1200px) {
   .container {
