@@ -86,8 +86,12 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
   align-items: start;
-  margin: 1rem;
+  background-color: var(--pri-background-color);
+  width: 100%;
 }
 .nav-link {
   list-style: none;
