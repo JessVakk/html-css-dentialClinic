@@ -13,7 +13,7 @@ html, body {
 .container {
   margin: auto;
   padding: 0 1rem;
-  max-width: 540px;
+  /* max-width: 540px; */
 }
 .d-flex {
   display: flex;
@@ -84,12 +84,12 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding-left: 1rem;
+  padding-left: .5rem;
   padding-top: 1rem;
   padding-bottom: .5rem;
   align-items: start;
   background-color: var(--pri-background-color);
-  width: 100%;
+  width: 25%;
 }
 .nav-link {
   list-style: none;
@@ -131,12 +131,12 @@ html, body {
  }
 #showcase .text {
   margin-bottom: 3rem;
-  
 }
 #showcase .text h1 {
   font-family: 'Roboto Slab';
   color: var(--title-color);
-  font-size: 3rem;
+  line-height: 1.2;
+  font-size: 2rem;
   font-weight: normal;
   margin-bottom: 1rem;
 }
@@ -186,14 +186,14 @@ html, body {
 #about-us h1{
   color: var(--title-color);
   font-family: 'Roboto Slab';
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   font-weight: normal;
   text-align: center;
   padding-bottom: 1rem;
 }
 #about-us span{
   color: var(--primary-color);
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   font-family: 'Roboto Slab';
   font-weight: normal;
 }
@@ -240,9 +240,8 @@ html, body {
   color: var(--title-color);
   font-family:'Roboto slab';
   font-weight: normal;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   padding: 1rem;
-  
 }
 .grid .text span hr{
   display: none;
@@ -301,7 +300,7 @@ html, body {
 }
 .card h3 {
   color: var(--title-color);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: 'Roboto Slab';
   font-weight: normal;
 }
@@ -315,9 +314,7 @@ html, body {
   padding-right: 2.5rem;
   padding-top: 1.5rem;
 }
-/* p {
-  font-size: 18px;
-} */
+
 /* -------------APPOINTMENT START----------------------------------  */
 
 #appointment{
@@ -334,7 +331,7 @@ html, body {
   color: var(--pri-background-color);
   font-family: 'Roboto slab';
   font-weight: normal;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 } 
 #appointment .booking {
   display: flex;
@@ -418,8 +415,6 @@ html, body {
   
   /*------ MAIN-MENU---------- */
   .nav .container{
-    /* display: flex;
-    justify-content: space-between; */
     align-items: center; 
     padding-right: 0;
   }   
@@ -431,7 +426,9 @@ html, body {
     flex-direction: row;
     align-items: center;
     margin: 1rem;
+    width: none;
   }
+  
   .nav-link {
     display: block;
   }
@@ -445,7 +442,7 @@ html, body {
   #showcase .content {
     display: flex;
     flex-direction: column;
-    padding-left: 5rem;
+    padding-left: 2rem;
   }
   #showcase .content .text {
     text-align: left;
@@ -460,9 +457,14 @@ html, body {
     align-self: flex-end;
     height: 28rem;
   }
+  #about-us .text h1 {
+    text-align: left;
+  }
+  #about-us .text p {
+    text-align: left;
+  }
   #about-us .text {
     width: 35rem;
-    /* color: #f0cfb6; */
   }
 
    /* -------SERVICES-------------- */
@@ -470,20 +472,12 @@ html, body {
     padding-top: 2rem;
   }
   #services .container {
-  /* display: grid;
-  justify-content: center; */
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   padding-bottom: 5rem;
   }
   .card {
-    /* width: 100%; */
     height: 20rem;
-    /* border: 1px transparent;
-    border-radius: 10px;
-    align-items: center;
-    align-content: center;
-    background-color: var(--pri-background-color); */
     flex-direction: column;
   }
   .rubrik-card {
@@ -507,7 +501,6 @@ html, body {
   }
   #appointment .booking  {
     padding-top: 2.5rem;
-    
   }
   /* ------------FOOTER-------------- */
   .c {
@@ -528,7 +521,10 @@ html, body {
 /*----------------------SHOWCASE----------------- */
 #showcase .container img {
    display: block;
-   height: 35rem;
+   height: 30rem;
+}
+#showcase .content {
+  padding-right: 3rem;
 }
 #showcase .text {
    text-align: left;
@@ -541,47 +537,24 @@ html, body {
 }
 
   /*------------- ABOUT US----------- */
-/* #about-us .container {
-  margin-bottom: 0;
-} */
+
 #about-us .container img {
-  height: 35rem;
+  height: 30rem;
 }
 .survey-grid {
-  /* background-color: var(--pri-background-color);
-  flex-direction: row;
-  justify-content: space-between; */
   padding-right: 3rem ;
   padding-top: 2rem;
 }
 #about-us h1{
-  /* color: #363636;
-  font-family: 'Roboto Slab'; */
-  font-size: 30px;
-  /* font-weight: normal; */
   text-align: left;
 }
-/* #about-us span{
-  color: var(--primary-color);
-  font-size: 30px;
-  font-family: Roboto Slab;
-  font-weight: normal;
-} */
 #about-us .container .content hr{
   display: block;
-  /* border: 0; */
-  /* border-radius: 10px;
-  background:  var(--secondary-color); */
   width: 550px;
-  /* height: 3.5px; */
-  /* margin-left:17rem; */
   margin-top: 1rem;
   margin-bottom: 1.5rem;
-  /* transform: translate(-50%,-50%); */
 }  
 #about-us .text p {
-  /* color: #363636;
-  font-family: Roboto; */
   font-size: 18px;
   text-align: left;
 }
@@ -591,8 +564,6 @@ html, body {
   display: block;
 }  
 #services .container {
-  /* display: grid;
-  justify-content: center; */
   grid-template-columns: 1fr 1fr 1fr;
 }
 .card .info-text{
@@ -606,8 +577,29 @@ html, body {
   .container {
     max-width: 1140px;
   }
-    #about-us .text {
+  #showcase .content {
+    padding-left: 5rem;
+  }
+  #showcase .text h1 {
+    font-size: 2.6rem;
+  }
+  #about-us h1{
+    font-size: 2.5rem;
+  }
+  #about-us span{
+    font-size: 2.5rem;
+  }
+   #about-us .text {
     width: 45rem;
   }
+  .grid .rubrik{
+    font-size: 2.5rem;
+  }
+  .card h3 {
+      font-size: 1.4rem;
+   }
+  #appointment p{
+    font-size: 1.8rem;
+  } 
 }
 }
